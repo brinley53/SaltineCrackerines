@@ -1,0 +1,182 @@
+:root {
+    --col1: #E8DAB2;
+    --col2: #50514F;
+    --col3: #FE5F55;
+    --col4: #247ba0;
+    --col5: #92afd7;
+}
+
+
+* {
+    background-color: var(--col1);
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+}
+
+.container {
+    display: flex;
+}
+
+.left-section, .right-section {
+    width: 50%; /* Each section takes up half of the container */
+    padding: 20px;
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+.header_bar {
+    height: 10%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 1vh;
+    margin-top: 0vh;
+}
+
+.title_text {
+    margin: 1.5vh 0vw 0vh 0vw;
+    align-self: center;
+    font-size: 3vw;
+}
+
+.back_button {
+    width: 15vw;
+    margin: 1vh 0vw 1vh 1vw;
+    border: 1px solid transparent;
+    border-radius: 2vh;
+    padding: 10px;
+    font-size: 1.5vw;
+    background-color: var(--col3);
+}
+.back_button:hover {
+    cursor: pointer;
+}
+
+.view_team_button {
+    width: 15vw;
+    margin: 1vh 1vw 1vh 1vw;
+    border: 1px solid transparent;
+    border-radius: 2vh;
+    padding: 10px;
+    font-size: 1.5vw;
+    background-color: var(--col3);
+}
+.view_team_button:hover {
+    cursor: pointer;
+}
+
+.sections {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+
+    padding: 0vh 1vw 1vh 1vw;
+}
+
+.selected_poke_block {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    font-weight: 500;
+    /* overflow-y: scroll; */
+
+    background-color: #92afd7F0;
+    width: 15%;
+    height: 100%;
+
+    border-radius: 1vw;
+}
+
+.selected_poke_text {
+    background-color: var(--col5);
+    margin: 2vh;
+}
+
+.selected_poke_img {
+    width: auto; 
+    height: 12vh;
+    background-color: transparent;
+    padding: 1vh 1vw 1vh 1vw;
+}
+
+.selected_poke_img:hover{
+    cursor: pointer;
+}
+
+.selected_poke_text {
+    font-size: 2vw;
+    padding-bottom: 0vh;
+}
+
+.right_section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    height: 100%; width: 85%;
+
+    background-color: var(--col2);
+    overflow-x: hidden;
+
+    border-radius: 1vw;
+
+    padding: .5vw;
+}
+
+
+/* textbox for searchng for pokemon by name */
+.search_block {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #859cbe;
+}
+
+.pokemon_name_search {
+    display: flex; 
+    justify-content: center; 
+    flex-direction: column; 
+    align-items: center;
+}
+
+/* button to search for pokemon using filtes */
+.search_button_block {
+    display: flex;
+    flex-direction: row;
+    /* margin: 1vw; */
+    background-color: transparent;
+}
+
+.search_button {
+    background-color: var(--col3);
+    margin: .5vh 0vw .5vh 0vw;
+    width: 15vw;
+    height: 6vh;
+    border: 1px solid transparent;
+    border-radius: 3vh;
+    font-size: 1.5vw;
+    text-align: center;
+    color: #ffffff;
+}
+
+.search_button:hover {
+    cursor: pointer;
+}

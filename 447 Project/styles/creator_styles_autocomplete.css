@@ -1,0 +1,83 @@
+.autocomplete {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    background-color: var(--col5);
+}
+/* 
+input {
+    border: 1px solid transparent;
+    border-radius: 2vh;
+    padding: 10px;
+    font-size: 1.5vw;
+} */
+
+/* .pokemon_name_search_block {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: green;
+} */
+
+.pokemon_name_search {
+    background-color: var(--col5);
+}
+
+.pokemon_name_search input[type=text] {
+    background-color: var(--col4);
+    color: #fff;
+    width: 15vw;
+    height: 6vh;
+    border: 1px solid black;
+    border-radius: 2vh;
+    border: 1px solid transparent;
+    border-radius: 2vh;
+    padding: 10px;
+    font-size: 1.5vw;
+    
+}
+
+::placeholder {
+    color: white;
+}
+
+/* 
+input[type=submit] {
+    background-color: var(--col3);
+    color: #fff;
+    cursor: pointer;
+} */
+
+.autocomplete-items {
+    position: absolute;
+    border: 1px solid var(--col1);
+    border-bottom: none;
+    border-top: none;
+    border-radius: 20px;
+    z-index: 99;
+    /*position the autocomplete items to be the same width as the container:*/
+    top: 100%;
+    left: 0;
+    right: 0;
+}
+
+.autocomplete-items div {
+    padding: 10px;
+    cursor: pointer;
+    background-color: var(--col5); 
+    border-bottom: 1px solid transparent; 
+    /* border-radius: 5px; */
+}
+
+/*when hovering an item:*/
+.autocomplete-items div:hover {
+    background-color: var(--col4); 
+}
+
+/*when navigating through the items using the arrow keys:*/
+.autocomplete-active {
+    background-color: var(--col4) !important; 
+    color: #ffffff; 
+}
